@@ -1,0 +1,25 @@
+{% extends 'base_page.html' %}
+{% load static %}
+
+{% block title %}Question Paper Generator{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <form method="POST" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Upload paper or textbook</legend>
+            <input type="file" name="fileUpload" accept="image/*" required><br><br>
+            <input type="submit" name="btnUpload" value="Upload" class="button">
+          </fieldset>
+        </form>
+    </div>
+    <div class="col-md-6">
+      
+    </div>
+  </div>
+</div>
+
+{% endblock %}
